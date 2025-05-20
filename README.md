@@ -26,58 +26,13 @@ yarn build
 yarn dev
 ```
 
-## @express-cc/react-client
+## What's included
 
-The `@express-cc/react-client` package provides a React hook for resource locking, supporting both CommonJS and ESM.
+- The `@express-cc/server` package provides configurable resource locking mechanism for express apps.
 
-### Building and Publishing
+- The `@express-cc/react-client` package provides a React hook for resource locking
 
-```bash
-# Build the package
-cd packages/react-client
-yarn build
-
-# Publish the package
-yarn publish
-```
-
-### Usage Example
-
-```jsx
-import React from 'react';
-import { useLock } from '@express-cc/react-client';
-
-function ResourceEditor({ resourceId }) {
-  const { lock, lockLost } = useLock('resource', resourceId, {
-    baseUrl: 'https://api.example.com',
-    duration: 180, // Lock duration in seconds
-    retryInterval: 10, // Retry interval in seconds
-  });
-
-  if (lockLost) {
-    return <div>You have lost the lock on this resource. Please refresh to try again.</div>;
-  }
-
-  if (!lock) {
-    return <div>Acquiring lock...</div>;
-  }
-
-  return (
-    <div>
-      <h2>Editing Resource {resourceId}</h2>
-      <div>Lock expires at: {new Date(lock.expiresAt).toLocaleTimeString()}</div>
-      {/* Editor UI */}
-    </div>
-  );
-}
-```
-
-## Module Formats
-
-Supports both:
-
-- **CommonJS**: `require('@express-cc/react-client')`
-- **ESM**: `import { useLock } from '@express-cc/react-client'`
+Please refer to the README file inside each package for further instructions and examples.
 
 ## License
 

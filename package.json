@@ -1,0 +1,26 @@
+{
+  "name": "express-concurrency-control",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Express middleware for concurrency control",
+  "devDependencies": {},
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "resolutions": {
+    "@express-cc/client": "file:packages/react-client"
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

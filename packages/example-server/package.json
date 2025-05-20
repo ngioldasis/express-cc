@@ -1,0 +1,23 @@
+{
+  "name": "example-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "description": "An example Express server using the @express-cc/server package",
+  "scripts": {
+    "dev": "NODE_ENV=development tsc-watch --noClear --onSuccess \"node ./dist/example-server.js\"",
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@express-cc/server": "*",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.8.3"
+  }
+}

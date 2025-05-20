@@ -1,0 +1,23 @@
+{
+  "name": "example-react-app",
+  "version": "1.0.0",
+  "main": "main.tsx",
+  "license": "MIT",
+  "private": true,
+  "description": "An example React app using the @express-cc/react-client package",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@express-cc/react-client": "1.0.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0"
+  }
+}

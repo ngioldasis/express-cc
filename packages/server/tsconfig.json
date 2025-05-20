@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "moduleDetection": "force",
+    "moduleResolution": "node16",
+    "declaration": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "es2017",
+    "module": "Node16"
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

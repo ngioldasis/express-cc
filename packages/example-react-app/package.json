@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "@express-cc/react-client": "1.0.0"
+    "@express-cc/react-client": "*"
   },
   "devDependencies": {
     "vite": "^4.0.0",

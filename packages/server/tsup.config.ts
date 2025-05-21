@@ -8,4 +8,7 @@ export default defineConfig({
   skipNodeModulesBundle: true,
   sourcemap: true,
   clean: true,
+  esbuildOptions(options) {
+    options.drop = ['console']; // 👈 This removes all console.* statements
+  },
 });

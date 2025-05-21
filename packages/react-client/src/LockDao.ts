@@ -25,10 +25,6 @@ let apiClient = axios.create({
   headers: options.apiHeaders,
 });
 
-export const setApiClient = (client: any) => {
-  apiClient = client;
-};
-
 export const LockDao = {
   setOptions: (opts: ClientOptions) => {
     options = { ...options, ...opts, apiHeaders: { ...options.apiHeaders, ...opts.apiHeaders } };

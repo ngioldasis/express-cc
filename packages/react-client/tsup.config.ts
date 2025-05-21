@@ -14,12 +14,6 @@ export default defineConfig({
     NODE_ENV: 'production',
   },
   esbuildOptions(options) {
-    options.banner = {
-      js: `/**
- * @express-cc/react-client v1.0.0
- * Resource locking functionality for React applications
- * Copyright (c) ${new Date().getFullYear()}
- */`,
-    };
+    options.drop = ['console']; // 👈 This removes all console.* statements
   },
 });

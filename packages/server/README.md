@@ -1,5 +1,7 @@
 # @express-cc/server
 
+An Express-based locking mechanism for resource locking functionality.
+
 ## Installation
 
 ### npm
@@ -13,6 +15,10 @@
 ```
   yarn add @express-cc/server
 ```
+
+## Dependencies
+
+This package requires Express as a peer dependency (version 4.16.0 or higher, but lower than 5.0.0).
 
 ## Usage Example
 

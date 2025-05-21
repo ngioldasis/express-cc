@@ -1,6 +1,6 @@
 {
   "name": "@express-cc/react-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A React hook for resource locking functionality",
   "license": "MIT",
   "private": false,
